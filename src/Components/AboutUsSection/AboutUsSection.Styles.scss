@@ -1,0 +1,56 @@
+.about-us-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  .content {
+    padding-top: 15rem;
+    text-align: center;
+
+    .heading {
+      font-size: 6rem;
+      font-family: poppins;
+      letter-spacing: 10px;
+    }
+
+    .underline {
+      width: 50%;
+      height: 1px;
+      border-bottom: 1px solid black;
+      margin: 5rem auto;
+    }
+
+    .text {
+      width: 70%;
+      margin: auto;
+      font-size: 2.4rem;
+      line-height: 3rem;
+      font-family: roboto;
+      letter-spacing: 2px;
+      white-space: pre-line;
+    }
+
+    .img-container {
+      width: 40%;
+      margin: 5rem auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .our-vision {
+      padding-bottom: 15rem;
+
+      .heading {
+        font-size: 4rem;
+        font-weight: 600;
+        letter-spacing: 5px;
+      }
+      .underline {
+        width: 30%;
+        margin: 2.5rem auto;
+      }
+    }
+  }
+}

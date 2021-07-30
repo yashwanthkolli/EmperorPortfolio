@@ -1,0 +1,20 @@
+.gallery-section {
+  min-height: 100vh;
+  position: relative;
+
+  .heading {
+    font-family: poppins;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 15rem;
+  }
+
+  .underline {
+    width: 30%;
+    height: 1px;
+    border-bottom: 1px solid black;
+    margin: 2.5rem auto;
+  }
+}

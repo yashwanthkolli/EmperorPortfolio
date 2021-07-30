@@ -1,0 +1,31 @@
+.map-section {
+  position: relative;
+
+  .heading {
+    font-family: poppins;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 15rem;
+  }
+
+  .underline {
+    width: 30%;
+    height: 1px;
+    border-bottom: 1px solid black;
+    margin: 2.5rem auto;
+  }
+
+  .map-container {
+    width: 70%;
+    margin: auto;
+    height: 50rem;
+    padding-bottom: 15rem;
+
+    .leaflet-container {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.contact-us-section {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(rgb(54, 54, 54), 0.9),
+      rgba(rgb(0, 0, 0), 0.9)
+    ),
+    url("../../Assets/ContactUsSection/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  color: white;
+
+  .heading {
+    font-family: poppins;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 15rem;
+  }
+
+  .underline {
+    width: 30%;
+    height: 1px;
+    border-bottom: 1px solid white;
+    margin: 2.5rem auto;
+  }
+}

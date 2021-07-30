@@ -1,0 +1,203 @@
+.navbar {
+  width: 100%;
+  height: 8rem;
+  z-index: 9999;
+  background-color: #161616;
+  position: fixed;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s;
+
+  .nav-logo {
+    height: 7rem;
+    width: 7rem;
+    margin-left: 6rem;
+    -webkit-tap-highlight-color: transparent;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .nav-links {
+    margin-right: 6rem;
+
+    .nav-option {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+
+      &:not(:last-child) {
+        margin-right: 5rem;
+      }
+
+      &:hover,
+      :active {
+        color: gray;
+      }
+    }
+  }
+
+  .nav-btn {
+    background: #161616;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    right: 2.5rem;
+    z-index: 99;
+    -webkit-tap-highlight-color: transparent;
+
+    .nav-icon {
+      position: relative;
+      margin-top: 1.5rem;
+
+      &,
+      &::before,
+      &::after {
+        width: 3rem;
+        height: 3px;
+        background-color: white;
+        display: inline-block;
+        transition: all 0.2s;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+      }
+
+      &::before {
+        top: -0.8rem;
+      }
+      &::after {
+        top: 0.8rem;
+      }
+    }
+
+    &:hover .nav-icon::before {
+      top: -1rem;
+    }
+
+    &:hover .nav-icon::after {
+      top: 1rem;
+    }
+  }
+
+  .checkbox {
+    width: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  .checkbox:checked + .nav-btn {
+    background: transparent;
+  }
+
+  .checkbox:checked + .nav-btn .nav-icon {
+    background: transparent;
+  }
+
+  .checkbox:checked + .nav-btn .nav-icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  .checkbox:checked + .nav-btn .nav-icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  .nav-visible {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 95;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      opacity: inherit;
+      text-decoration: none;
+      color: white;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2.5rem;
+      line-height: 20px;
+      -webkit-tap-highlight-color: transparent;
+
+      &:not(:last-child) {
+        margin-bottom: 6rem;
+      }
+
+      &:hover {
+        color: #797979;
+      }
+    }
+  }
+
+  .nav-bg {
+    position: absolute;
+    height: 6rem;
+    width: 6rem;
+    right: 6rem;
+    opacity: 0;
+    z-index: 94;
+    background-image: radial-gradient(#464646, #161616);
+    transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  // .nav-bg{
+  //     height: 5rem;
+  //     width: 5rem;
+  //     border-radius: 50%;
+  //     position: absolute;
+  //     right: 6rem;
+  //     background-image: radial-gradient(#464646, #161616);
+  //     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+  //     z-index: 90;
+  // }
+}
+
+@media only screen and (min-width: 950px) {
+  .nav-btn {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .nav-links {
+    display: none;
+    visibility: hidden;
+  }
+
+  .checkbox {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .navbar {
+    .nav-logo {
+      margin-left: 2.5rem;
+    }
+  }
+}

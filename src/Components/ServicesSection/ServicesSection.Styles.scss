@@ -1,0 +1,33 @@
+.services-section {
+  background-color: #333;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+
+  .heading {
+    font-family: poppins;
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-top: 15rem;
+  }
+
+  .underline {
+    width: 30%;
+    height: 1px;
+    border-bottom: 1px solid white;
+    margin: 2.5rem auto;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 5rem auto 0 auto;
+    padding-bottom: 15rem;
+  }
+}
