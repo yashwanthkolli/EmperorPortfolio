@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import 'aos'
 
 import aboutUsData from '../../Assets/AboutUsSection/AboutUs.Data'
 
@@ -17,16 +18,20 @@ const AboutUsSection = () => {
                 <span>Hello there</span>
             </div>
             <div className='content'>
-                <h1 className='heading'>WE ARE EMPEROR</h1>
-                <div className='underline'></div>
-                <p className='text'>{aboutUs}</p>
-                <div className='img-container'>
+                <div data-aos="fade-up" data-aos-duration="1000">
+                    <h1 className='heading'>WE ARE EMPEROR</h1>
+                    <div className='underline'></div>
+                </div>
+                <p className='text' data-aos="fade-up" data-aos-duration="1000">{aboutUs}</p>
+                <div className='img-container' data-aos="fade-up" data-aos-duration="1000">
                     <img src={aboutUsData.ourVisionImg} alt='Our Vision' />
                 </div>
                 <div className='our-vision'>
-                    <h1 className='heading'>OUR VISION</h1>
-                    <div className='underline'></div>
-                    <p className='text'>{ourVision}</p>
+                    <div data-aos="fade-up" data-aos-duration="1000">
+                        <h1 className='heading'>OUR VISION</h1>
+                        <div className='underline'></div>
+                    </div>    
+                    <p className='text' data-aos="fade-up" data-aos-duration="1000">{ourVision}</p>
                 </div>
             </div>
             <div className='scroll scroll-our-vision scroll-buttom-left scroll-dark'>

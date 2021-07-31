@@ -1,6 +1,7 @@
 .gallery-section {
   min-height: 100vh;
   position: relative;
+  color: #142668;
 
   .heading {
     font-family: poppins;
@@ -14,7 +15,7 @@
   .underline {
     width: 30%;
     height: 1px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #142668;
     margin: 2.5rem auto;
   }
 }

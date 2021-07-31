@@ -4,12 +4,13 @@ import ContactUsSection from './Components/ContactUsSection/ContactUsSection';
 import GallerySection from './Components/GallerySection/GallerySection';
 import LandingSection from './Components/LandingSection/LandingSection';
 import MapSection from './Components/MapSection/MapSection';
-import Navbar from './Components/NavBar/Navbar';
+import Menu from './Components/Menu/Menu';
 import ServicesSection from './Components/ServicesSection/ServicesSection';
 
 function App() {
   return (
     <div className="App">
+      <Menu />
       <LandingSection />
       <AboutUsSection />
       <ServicesSection />
