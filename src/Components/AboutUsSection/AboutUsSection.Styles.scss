@@ -9,6 +9,8 @@
     text-align: center;
 
     .heading {
+      width: 70%;
+      margin: auto;
       font-size: 6rem;
       font-family: poppins;
       letter-spacing: 10px;
@@ -51,6 +53,88 @@
       .underline {
         width: 30%;
         margin: 2.5rem auto;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-us-section {
+    .content {
+      .img-container {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us-section {
+    .content {
+      .heading {
+        width: 80%;
+        font-size: 4.5rem;
+        letter-spacing: 7.5px;
+      }
+      .underline {
+        margin: 4rem auto;
+      }
+      .text {
+        width: 75%;
+        font-size: 2rem;
+        line-height: 2.25rem;
+        font-family: roboto;
+        letter-spacing: 1.5px;
+        white-space: pre-line;
+        text-align: justify;
+      }
+      .img-container {
+        width: 50%;
+      }
+      .our-vision {
+        .underline {
+          width: 50%;
+          margin: 3.5rem auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .about-us-section {
+    .content {
+      padding-top: 12rem;
+      .heading {
+        width: 80%;
+        font-size: 4rem;
+        letter-spacing: 6px;
+      }
+      .underline {
+        margin: 3rem auto;
+      }
+      .text {
+        width: 80%;
+        font-size: 2rem;
+        line-height: 2.1rem;
+        font-family: roboto;
+        letter-spacing: 1.2px;
+        white-space: pre-line;
+        text-align: justify;
+      }
+      .img-container {
+        width: 70%;
+      }
+      .our-vision {
+        padding-bottom: 12rem;
+        .heading {
+          font-size: 3.5rem;
+          letter-spacing: 4px;
+        }
+        .underline {
+          width: 50%;
+          margin: 3rem auto;
+        }
       }
     }
   }

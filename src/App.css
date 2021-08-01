@@ -7,9 +7,6 @@ html {
   font-size: 57%;
 }
 
-body {
-}
-
 body::-webkit-scrollbar {
   width: 7.5px;
   background-color: transparent;
@@ -25,6 +22,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.6rem;
   font-family: poppins;
   letter-spacing: 2px;
+  height: 10rem;
 }
 
 .scroll-dark {
@@ -39,7 +37,6 @@ body::-webkit-scrollbar-thumb {
 
 .scroll-buttom-right {
   position: absolute;
-  height: 10rem;
   right: 6rem;
   bottom: 0;
   border-right: 2px solid;
@@ -47,7 +44,6 @@ body::-webkit-scrollbar-thumb {
 
 .scroll-top-right {
   position: absolute;
-  height: 10rem;
   right: 6rem;
   border-right: 2px solid;
   display: flex;
@@ -57,7 +53,6 @@ body::-webkit-scrollbar-thumb {
 
 .scroll-buttom-left {
   position: absolute;
-  height: 10rem;
   left: 6rem;
   bottom: 0;
   border-left: 2px solid;
@@ -65,7 +60,6 @@ body::-webkit-scrollbar-thumb {
 
 .scroll-top-left {
   position: absolute;
-  height: 10rem;
   left: 6rem;
   border-left: 2px solid;
   display: flex;
@@ -82,5 +76,28 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 470px) {
   html {
     font-size: 50%;
+  }
+
+  .scroll {
+    padding: 0 1.5rem;
+    font-size: 1.4rem;
+    letter-spacing: 1.8px;
+    height: 8rem;
+  }
+
+  .scroll-buttom-right {
+    right: 3rem;
+  }
+
+  .scroll-top-right {
+    right: 3rem;
+  }
+
+  .scroll-buttom-left {
+    left: 3rem;
+  }
+
+  .scroll-top-left {
+    left: 3rem;
   }
 }

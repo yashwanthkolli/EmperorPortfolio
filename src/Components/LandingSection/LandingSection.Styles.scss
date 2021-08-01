@@ -82,3 +82,47 @@
     }
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  .landing-section {
+    .text {
+      width: 60%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .landing-section {
+    .text {
+      width: 65%;
+      text-align: center;
+      .welcome {
+        font-size: 2rem;
+        letter-spacing: 4px;
+      }
+      .heading {
+        font-size: 3.5rem;
+        letter-spacing: 3.5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .landing-section {
+    .logo-container {
+      left: 3rem;
+    }
+    .text {
+      width: 70%;
+      .welcome {
+        font-size: 2rem;
+        letter-spacing: 4px;
+      }
+      .heading {
+        font-size: 3rem;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}

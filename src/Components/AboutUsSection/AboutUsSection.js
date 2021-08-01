@@ -35,7 +35,7 @@ const AboutUsSection = () => {
                 </div>
             </div>
             <div className='scroll scroll-our-vision scroll-buttom-left scroll-dark'>
-                What We View
+                We Aim At Perfection
             </div>
         </div>
     )
