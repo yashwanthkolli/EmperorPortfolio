@@ -7,7 +7,6 @@
   outline: none;
   text-align: center;
   cursor: pointer;
-  position: absolute;
   top: 3rem;
   right: 6rem;
   z-index: 99;
@@ -127,7 +126,7 @@
 }
 
 .visible {
-  background: #142668;
+  background: #1c2131;
   opacity: 1;
   visibility: visible;
   width: 100%;
@@ -153,13 +152,13 @@
     font-size: 3rem;
     letter-spacing: 3px;
     background-size: 100% 200%;
-    background-image: linear-gradient(to top, white 50%, #142668 50%);
+    background-image: linear-gradient(to top, white 50%, #1c2131 50%);
     transition: all 0.5s;
 
     &:hover,
     &:active {
       background-position: 0 100%;
-      color: #142668;
+      color: #1c2131;
     }
 
     &:not(:last-child) {

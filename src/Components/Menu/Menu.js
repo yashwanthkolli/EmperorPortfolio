@@ -10,6 +10,10 @@ const Menu = () => {
     const location = useLocation()
 
     useEffect(() => {
+        document.body.style.overflow = 'visible'
+        setOpen(false)
+        const menuCheckbox = document.getElementById('checkbox')
+        if(menuCheckbox) menuCheckbox.checked = false
         if (location.hash) {
             scrollTo(location.hash.slice(1))
         } else {
@@ -20,7 +24,7 @@ const Menu = () => {
     const scrollTo = (section) => {
         scroller.scrollTo(section, {
             duration: 800,
-            delay: 500,
+            delay: 0,
             offset: 50,
             smooth: 'easeInOutQuart'
         })
@@ -30,23 +34,13 @@ const Menu = () => {
         const menuCheckbox = document.getElementById('checkbox')
         menuCheckbox.checked = !menuCheckbox.checked
         setOpen(menuCheckbox.checked)
-        console.log(menuCheckbox.checked)
+        document.body.style.overflow = menuCheckbox.checked ? "hidden" : "visible"
     }
-
-    window.addEventListener('scroll', () => {
-        const menu = document.getElementsByClassName('menu')[0]
-        menu.classList.remove('visible')
-        menu.classList.add('invisible')
-        
-        const menuCheckbox = document.getElementById('checkbox')
-        menuCheckbox.checked = false
-        setOpen(false)
-    })
 
     return (
         <>
             <input id='checkbox' type='checkbox' className='checkbox' />
-            <div className='menu-button' onClick={() => handleClick()}>
+            <div className='menu-button' onClick={() => handleClick()} style={{position: open ? 'fixed' : 'absolute'}}>
                 <div className='icon-container'>
                     <span className={`menu-icon line-1 ${open ? null : 'animaiton'}`}>&nbsp;</span>
                     <span className={`menu-icon line-2 ${open ? null : 'animaiton'}`}>&nbsp;</span>
@@ -55,6 +49,7 @@ const Menu = () => {
             </div>
             <div className={`menu ${open ? 'visible' : 'invisible'}`}>
                 <div className='menu-items'>
+                    <Link className='menu-option' to='/'><span>Home</span></Link>
                     <Link className='menu-option' to='/#about-us-section'><span>About Us</span></Link>
                     <Link className='menu-option' to='/#services-section'><span>Services</span></Link>
                     <Link className='menu-option' to='/#gallery-section'><span>Gallery</span></Link>

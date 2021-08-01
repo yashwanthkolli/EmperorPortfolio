@@ -23,7 +23,7 @@ const LandingSection = () => {
     const scrollTo = (section) => {
         scroller.scrollTo(section, {
             duration: 800,
-            delay: 500,
+            delay: 0,
             offset: 50,
             smooth: 'easeInOutQuart'
         })
@@ -33,10 +33,11 @@ const LandingSection = () => {
         <div className='landing-section'>
             <div className='logo-container'>
                 <picture>
-                    <source type="image/webp" srcset={logoWebp} />
-                    <source type="image/png" srcset={logoPng} />
+                    <source type="image/webp" srcSet={logoWebp} />
+                    <source type="image/png" srcSet={logoPng} />
                     <img src={logoPng} alt="Emperor" />
                 </picture>
+                <span>Emperor</span>
             </div>
             <div className='text' data-aos="fade-up" data-aos-duration="1000" data-aos-delay='100'>
                 <div className='welcome'>WELCOME TO EMPEROR</div>

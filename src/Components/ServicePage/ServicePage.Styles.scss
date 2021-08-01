@@ -1,0 +1,97 @@
+.service-page {
+  height: 100vh;
+  position: relative;
+
+  .scroll {
+    height: 80vh;
+  }
+
+  .logo-container {
+    position: absolute;
+    left: 6rem;
+    top: 3rem;
+    width: 10rem;
+
+    img {
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .menu-button {
+    .menu-icon {
+      background-color: black;
+    }
+  }
+
+  .checkbox:checked + .menu-button .line-1,
+  .checkbox:checked + .menu-button .line-3 {
+    background: white;
+  }
+
+  .content {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+    .images-container {
+      width: 40%;
+      position: relative;
+      margin-top: -4rem;
+
+      &::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      .img-1 {
+        position: relative;
+        z-index: 2;
+        transition: all 0.5s;
+
+        &:hover {
+          z-index: 6;
+        }
+      }
+
+      .img-2 {
+        position: absolute;
+        z-index: 5;
+        top: 4rem;
+        left: 4rem;
+      }
+    }
+
+    .text {
+      width: 40%;
+
+      h1 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-family: poppins;
+        letter-spacing: 3px;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      p {
+        white-space: pre-line;
+        font-family: roboto;
+        font-size: 2rem;
+        line-height: 4rem;
+        text-align: center;
+      }
+    }
+  }
+}
