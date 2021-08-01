@@ -1,6 +1,6 @@
 .menu-button {
-  height: 6rem;
-  width: 6rem;
+  height: 10rem;
+  width: 10rem;
   border-radius: 50%;
   background: transparent;
   border: none;
@@ -16,8 +16,8 @@
 
   .icon-container {
     position: absolute;
-    top: 3rem;
-    left: 1.5rem;
+    top: 5rem;
+    left: 0;
   }
 
   .menu-icon {
@@ -156,7 +156,8 @@
     background-image: linear-gradient(to top, white 50%, #142668 50%);
     transition: all 0.5s;
 
-    &:hover {
+    &:hover,
+    &:active {
       background-position: 0 100%;
       color: #142668;
     }
@@ -220,5 +221,29 @@
   }
   100% {
     width: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .menu-button {
+    right: 3rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+  }
+
+  .menu-items {
+    width: 60%;
+    .menu-option {
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+  }
+
+  .menu-details {
+    width: 50%;
   }
 }

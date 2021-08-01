@@ -20,7 +20,7 @@ const Menu = () => {
     const scrollTo = (section) => {
         scroller.scrollTo(section, {
             duration: 800,
-            delay: 0,
+            delay: 500,
             offset: 50,
             smooth: 'easeInOutQuart'
         })
