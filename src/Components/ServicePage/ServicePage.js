@@ -33,6 +33,7 @@ const ServicePage = () => {
                 </div>
             </div>
             <Link to='/#services-section'><div className='scroll scroll-dark scroll-buttom-right'>Services</div></Link>
+            <div className='footer'></div>
         </div>
     )
 }

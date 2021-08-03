@@ -75,3 +75,41 @@
   height: 2.5rem;
   background-color: #1c2131;
 }
+
+@media only screen and (max-width: 950px) {
+  .contact-us-section {
+    .content {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-us-section {
+    .content {
+      width: 80%;
+      flex-direction: column;
+      text-align: center;
+      .address {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .contact-us-section {
+    .heading {
+      padding-top: 12rem;
+      font-size: 3.5rem;
+      letter-spacing: 4px;
+    }
+    .underline {
+      width: 50%;
+      margin: 3rem auto;
+    }
+    .links {
+      width: 50%;
+    }
+  }
+}

@@ -30,3 +30,31 @@
     }
   }
 }
+
+@media only screen and (max-width: 470px) {
+  .map-section {
+    .heading {
+      font-size: 3.5rem;
+      letter-spacing: 4px;
+      padding-top: 12rem;
+    }
+    .underline {
+      width: 50%;
+      margin: 3rem auto;
+    }
+    .map-container {
+      width: 80%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .map-section {
+    .map-container {
+      width: 75%;
+    }
+    .underline {
+      margin: 3.5rem auto;
+    }
+  }
+}

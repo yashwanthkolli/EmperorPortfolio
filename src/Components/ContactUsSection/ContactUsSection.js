@@ -15,7 +15,7 @@ const ContactUsSection = () => {
                 <div className='content' data-aos="fade-up" data-aos-duration="1000">
                     <div className='address'>
                         <h3>Where To Find Us</h3>
-                        <p>8C8W+4XW - Industrial AreaIndustrial Area 13, <br />Sharjah, United Arab Emirates</p>
+                        <p>Industrial AreaIndustrial Area 13, <br />Sharjah, United Arab Emirates</p>
                     </div>
                     <div className='contact'>
                         <div className='mail'>
