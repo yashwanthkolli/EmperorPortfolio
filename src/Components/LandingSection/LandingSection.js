@@ -37,10 +37,9 @@ const LandingSection = () => {
                     <source type="image/png" srcSet={logoPng} />
                     <img src={logoPng} alt="Emperor" />
                 </picture>
-                <span>Emperor</span>
             </div>
             <div className='text' data-aos="fade-up" data-aos-duration="1000" data-aos-delay='100'>
-                <div className='welcome'>WELCOME TO EMPEROR</div>
+                <div className='welcome'>WELCOME TO <span className='emperor'>EMPEROR</span></div>
                 <div className='heading'>We are a creative group of well experienced people who provide marine and industrial services at compitative prices.</div>
                 <Link className='nav-option' to='/#contact-us-section'>
                     <button className='button'>Contact Us</button>

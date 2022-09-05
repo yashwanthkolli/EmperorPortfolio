@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom'
 import { scroller } from 'react-scroll'
 import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi'
 import { FaFax } from 'react-icons/fa'
+import logoFullPng from '../../Assets/logo-full.png'
+import logoFullWebp from '../../Assets/logo-full.webp'
 
 import './Menu.Styles.scss'
 
@@ -58,6 +60,13 @@ const Menu = () => {
                     <Link className='menu-option' to='/#contact-us-section'><span>Contact Us</span></Link>
                 </div>
                 <div className='menu-details'>
+                    <div className='logo-container'>
+                        <picture>
+                            <source type="image/webp" srcSet={logoFullPng} />
+                            <source type="image/png" srcSet={logoFullWebp} />
+                            <img src={logoFullPng} alt="Emperor" />
+                        </picture>
+                    </div>
                     <div className='text'>Our team at Emperor aim to provide niche solutions to your engineering problems. We assure you of the highest quality services, business integrity, and cooperation.</div>
                     <div className='links'>
                         <a href='mailto:info@emperoreng.com' rel='noreferrer'>
