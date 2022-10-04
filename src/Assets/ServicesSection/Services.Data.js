@@ -7,8 +7,13 @@ import milling2 from './milling2.jpg'
 import refrigeration1 from './refrigeration2.jpg'
 import refrigeration2 from './refrigeration1.jpg'
 import carpentryAndFlooring1 from './carpentry1.jpg'
+import carpentryAndFlooring2 from './carpentry2.jpg'
 import pipelines1 from './pipelines1.jpg'
 import pipelines2 from './pipelines2.jpg'
+import cladding2 from './cladding2.jpg'
+import cladding1 from './cladding1.jpg'
+import ducting2 from './ducting2.jpg'
+import ducting1 from './ducting1.jpg'
 
 const servicesData = [
     {
@@ -56,23 +61,23 @@ const servicesData = [
         name: 'Marine Accommodation Refurbishment',
         url: 'marineAccommodationRefurbishment',
         img1: carpentryAndFlooring1,
-        img2: marineAndIndustrial2,
+        img2: carpentryAndFlooring2,
         info: '• Wall Panel Supply & Installation (sandwich, honeycomb, MDF)\n• Flooring: Vinyl Flooring\n• SS Galley Cabinets: Supply & Fixing Washbasin sink table, Kitchen Hoods & Filters, Customized SS galley furniture\n• Upholstery Works: Curtains, Sofa seats, Chairs, Mattress & Other Upholstery Works\n• Marine Door: Fabrication & Repair of Doors, Replacing of Door Locks & Door Close\n• Tempered Glasses: Supply & Fixing of Port Hole / Bridge glass doors, & Wheelhouse Glass'
     },
     {
         id: 7,
         name: 'Insulation & Cladding',
         url: 'insulationAndCladding',
-        img1: pipelines1,
-        img2: marineAndIndustrial2,
+        img1: cladding1,
+        img2: cladding2,
         info: '• Bulkhead And Deck Head Insulation\n• A-60/A-15/A-00 Insulation\n• Main Engine & Generator Exhaust Insulation and Cladding\n• Exhaust Insulation Mattress.'
     },
     {
         id: 8,
         name: 'HVAC Ducting',
         url: 'HVACducting',
-        img1: pipelines1,
-        img2: marineAndIndustrial2,
+        img1: ducting1,
+        img2: ducting2,
         info: '• Fabrication & Installation\n• AHU Cabin Repairing'
     }
 ]
