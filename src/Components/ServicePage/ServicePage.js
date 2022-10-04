@@ -15,7 +15,7 @@ const ServicePage = () => {
     return (
         <div className='service-page'>
             <Menu />
-            <Link to='/' className='logo-container'>
+            <Link to='/#services-section' className='logo-container'>
                 <picture>
                     <source type="image/webp" srcSet={logoWebp} />
                     <source type="image/png" srcSet={logoPng} />
@@ -24,7 +24,6 @@ const ServicePage = () => {
             </Link>
             <div className='content'>
                 <div className='images-container'>
-                    <img className='img-1' src={service.img1} alt={service.name} />
                     <img className='img-2' src={service.img2} alt={service.name} />
                 </div>
                 <div className='text'>

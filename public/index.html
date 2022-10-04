@@ -38,6 +38,13 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="loader">
+      <div id="container">
+        <div class="end-line"></div>
+        <div class="middle-line"></div>
+        <div class="end-line"></div>
+      </div>
+    </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -56,6 +63,15 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+      document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector("#root").style.visibility = "hidden";
+            document.querySelector("#loader").style.visibility = "visible";
+        } else {
+            document.querySelector("#loader").style.display = "none";
+            document.querySelector("#root").style.visibility = "visible";
+      }
+};
     </script>
   </body>
 </html>

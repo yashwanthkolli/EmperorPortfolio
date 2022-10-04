@@ -40,41 +40,24 @@
 
     .images-container {
       width: 40%;
+      height: 50%;
       position: relative;
-      margin-top: -4rem;
-
-      &::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
 
       img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
         display: block;
         object-fit: cover;
-      }
-
-      .img-1 {
-        position: relative;
-        z-index: 2;
-        transition: all 0.5s;
-
-        &:hover {
-          z-index: 6;
-        }
-      }
-
-      .img-2 {
-        position: absolute;
-        z-index: 5;
-        top: 4rem;
-        left: 4rem;
       }
     }
 
     .text {
       width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
       h1 {
         font-size: 3rem;
@@ -90,7 +73,6 @@
         font-family: roboto;
         font-size: 2rem;
         line-height: 4rem;
-        text-align: center;
       }
     }
   }

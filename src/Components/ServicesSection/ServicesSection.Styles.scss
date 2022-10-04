@@ -13,6 +13,15 @@
     padding-top: 15rem;
   }
 
+  .heading-secondary{
+    font-family: poppins;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
   .underline {
     width: 30%;
     height: 1px;
@@ -28,6 +37,14 @@
     align-items: center;
     width: 75%;
     margin: 5rem auto 0 auto;
+
+    &::after{
+      content: "";
+      width: 30%;
+    }
+  }
+
+  .container-2{
     padding-bottom: 15rem;
   }
 }
