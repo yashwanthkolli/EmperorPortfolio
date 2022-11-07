@@ -30,7 +30,7 @@ const servicesData = [
         url: 'fabricationActivities',
         img1: fabricationActivities1,
         img2: fabricationActivities2,
-        info: '• Structural Fabrication and Installation\n•	Pipe Fabrication and Installation\n• Sheet Metal Fabrication and Installation.\n• Canopy for Generator sound proofing\n• Cladding Fabrication and Installation for all industrial Needs\n• Shearing, Bending and Rolling'
+        info: '• Structural Fabrication and Installation\n• Sheet Metal Fabrication and Installation.\n• Canopy for Generator sound proofing\n• Cladding Fabrication and Installation for all industrial Needs\n• Shearing, Bending and Rolling'
     },
     {
         id: 3,

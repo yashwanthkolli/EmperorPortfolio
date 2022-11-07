@@ -1,7 +1,6 @@
 import React from 'react'
 import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi'
 import { FaFax } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
 
 import './ContactUsSection.Styles.scss'
 

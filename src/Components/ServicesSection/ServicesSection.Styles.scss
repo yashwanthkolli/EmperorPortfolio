@@ -48,3 +48,12 @@
     padding-bottom: 15rem;
   }
 }
+
+
+@media only screen and (max-width: 470px) {
+  .services-section{
+    .cards-container{
+      width: 80%;
+    }
+  }
+}
