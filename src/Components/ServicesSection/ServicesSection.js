@@ -16,7 +16,7 @@ const ServicesSection = () => {
                 <h1 className='heading'>OUR SERVICES</h1>
                 <div className='underline'></div>
             </div>
-            <h1 className='heading-secondary' data-aos="fade-up" data-aos-duration="1000">Industrial Insulation</h1>
+            <h1 className='heading-secondary' data-aos="fade-up" data-aos-duration="1000">Industrial Services</h1>
             <div className='cards-container'>
                 {
                     servicesData.slice(0, 5).map((service) => <ServiceCard key={service.id} service={service} />)
